@@ -52,6 +52,7 @@
 
 /* Header */
 .ui.inverted.segment > .ui.header {
+  background: #000000;
   color: #ffffff;
 }
 
@@ -654,12 +655,6 @@
   background: #1b1c1d;
   color: rgba(255, 255, 255, 0.9);
 } 
-
-.header {
-  background: #fff;
-  color: rgba(255, 255, 255, 0.9);
-} 
-
 
 /* Nested */
 .ui.inverted.segment .segment {

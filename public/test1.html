@@ -27,10 +27,13 @@
   <link rel="stylesheet" type="text/css" href="semantic/dist/components/sidebar.css">
   <link rel="stylesheet" type="text/css" href="semantic/dist/components/transition.css">
 
-   <style type="text/css">
+ 
+  <style type="text/css">
+
     .hidden.menu {
       display: none;
     }
+
     .masthead.segment {
       min-height: 700px;
       padding: 1em 0em;
@@ -51,6 +54,7 @@
       font-size: 1.7em;
       font-weight: normal;
     }
+
     .ui.vertical.stripe {
       padding: 8em 0em;
     }
@@ -70,6 +74,7 @@
     .ui.vertical.stripe .horizontal.divider {
       margin: 3em 0em;
     }
+
     .quote.stripe.segment {
       padding: 0em;
     }
@@ -77,12 +82,15 @@
       padding-top: 5em;
       padding-bottom: 5em;
     }
+
     .footer.segment {
       padding: 5em 0em;
     }
+
     .secondary.pointing.menu .toc.item {
       display: none;
     }
+
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
         display: none !important;
@@ -106,15 +114,18 @@
         font-size: 1.5em;
       }
     }
+
+
   </style>
 
   <script src="assets/library/jquery.min.js"></script>
-  <script src="semantic/dist/components/visibility.js"></script>
-  <script src="semantic/dist/components/sidebar.js"></script>
-  <script src="semantic/dist/components/transition.js"></script>
+  <script src="../dist/components/visibility.js"></script>
+  <script src="../dist/components/sidebar.js"></script>
+  <script src="../dist/components/transition.js"></script>
   <script>
   $(document)
     .ready(function() {
+
       // fix menu when passed
       $('.masthead')
         .visibility({
@@ -127,10 +138,12 @@
           }
         })
       ;
+
       // create sidebar and attach to menu open
       $('.ui.sidebar')
         .sidebar('attach events', '.toc.item')
       ;
+
     })
   ;
   </script>
@@ -168,7 +181,7 @@
 
 <!-- Page Contents -->
 <div class="pusher">
-  <div class "ui inverted vertical masthead center aligned segment">
+  <div class="ui inverted vertical masthead center aligned segment">
 
     <div class="ui container">
       <div class="ui large secondary inverted pointing menu">
@@ -195,7 +208,6 @@
     </div>
 
   </div>
-</div>
 
   <div class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
@@ -216,6 +228,7 @@
         </div>
       </div>
     </div>
+  </div>
 
 
   <div class="ui vertical stripe quote segment">
@@ -279,7 +292,7 @@
     </div>
   </div>
 </div>
-<script src="semantic/dist/semantic.min.js"></script>
+
 </body>
 
 </html>

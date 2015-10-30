@@ -655,10 +655,6 @@
   color: rgba(255, 255, 255, 0.9);
 } 
 
-.header {
-  background: #ffffff;
-}
-
 /* Nested */
 .ui.inverted.segment .segment {
   color: rgba(0, 0, 0, 0.87);

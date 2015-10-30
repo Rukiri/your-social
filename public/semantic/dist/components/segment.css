@@ -655,8 +655,7 @@
   color: rgba(255, 255, 255, 0.9);
 } 
 
-.ui.inverted.segment,
-.ui.primary.inverted.segment {
+.header {
   background: #fff;
   color: rgba(255, 255, 255, 0.9);
 } 

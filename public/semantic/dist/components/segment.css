@@ -656,6 +656,10 @@
   color: rgba(255, 255, 255, 0.9);
 } 
 
+.footer {
+  background: #1b1c1d;
+}
+
 /* Nested */
 .ui.inverted.segment .segment {
   color: rgba(0, 0, 0, 0.87);

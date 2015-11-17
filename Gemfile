@@ -22,9 +22,19 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'haml', '~> 4.0', '>= 4.0.7'
-gem 'simple_form', '~> 3.2'
 gem 'devise', '~> 3.5', '>= 3.5.2'
+gem 'omniauth'
+gem 'annotate', github: 'ctran/annotate_models'
+gem 'better_errors'
+gem 'binding_of_caller'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
+gem 'local_time'
+gem 'ransack', '~> 1.7'
+gem 'will_paginate', '~> 3.0.6'
+gem 'kaminari'
+gem 'gravtastic'
+gem 'forem', :github => "radar/forem", :branch => "rails4"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

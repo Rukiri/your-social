@@ -1,0 +1,6 @@
+<hr />
+<%= div_for forum_post do %>
+  <p class="text-muted">Posted by <%= forum_post.user.email %>  <%= time_ago_in_words forum_post.created_at %> <%= link_to "Edit", :controller => "forum_posts", :action => "edit", :id => forum_post.id %>
+</p>
+  <p><%= forum_post.body %></p>
+<% end %>

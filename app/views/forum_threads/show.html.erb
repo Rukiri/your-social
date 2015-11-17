@@ -1,0 +1,8 @@
+<div class="container">
+  <h1><%= @forum_thread.subject %></h1>
+  <%= image_tag current_user.gravatar_url(:size => 100) %> <p class="text-muted">Started by <%= @forum_thread.user.username %> <%= time_tag(@forum_thread.created_at) %></p>
+  <%= will_paginate @forum_posts %>
+  <%= render @forum_thread.forum_posts %>
+  <hr />
+  <%= render partial: "forum_posts/form" %>
+</div>

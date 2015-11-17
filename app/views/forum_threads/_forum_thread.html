@@ -1,0 +1,5 @@
+<%= link_to forum_thread do %>
+  <h3><%= forum_thread.subject %></h3>
+  <h3><%= forum_thread.forum_posts.count %></h3>
+  <%= link_to "Edit", :controller => "forum_threads", :action => "edit", :id => forum_thread.id %>
+<% end %>

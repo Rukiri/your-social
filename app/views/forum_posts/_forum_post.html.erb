@@ -1,6 +1,19 @@
-<hr />
-<%= div_for forum_post do %>
-  <p class="text-muted">Posted by <%= forum_post.user.email %>  <%= time_ago_in_words forum_post.created_at %> <%= link_to "Edit", :controller => "forum_posts", :action => "edit", :id => forum_post.id %>
+<%= div_for @forum_post do %>
+<div class="pull-avatar-left" style="padding-right: 10px; padding-bottom: 10px; margin-top: 20px; margin-left: 45px;"><%= image_tag forum_post.user.gravatar_url(:size => 55), :class => "img-circle avatar" %></div>
+<div class="forum-post-container" style="margin-top: 20px; margin-left: 120px; padding-bottom: 10px;">
+<p class="text-muted">Posted by <%= forum_post.user.username %>  <%= local_time_ago forum_post.created_at %>  
+<% if current_user.admin %>
+  <%= link_to edit_forum_thread_forum_post_path(@forum_thread, forum_post), class: "btn btn-info btn-xs" do  %>
+    <span class="glyphicon glyphicon-pencil"></span>
+  <% end %>
+<% end %>
+<% if current_user.admin %>
+  <%= link_to forum_thread_forum_post_path(@forum_thread, forum_post), method: :delete, data: { confirm: "Are you sure you want to do this?" }, class: "btn btn-danger btn-xs" do %>
+    <span class="glyphicon glyphicon-remove"></span>
+  <% end %>
+<% end %>
+
 </p>
-  <p><%= forum_post.body %></p>
+  <p><%= markdownify forum_post.body %></p>
+</div>
 <% end %>

@@ -33,7 +33,12 @@ gem 'ransack', '~> 1.7'
 gem 'will_paginate', '~> 3.0.6'
 gem 'kaminari'
 gem 'gravtastic'
-gem 'forem', :github => "radar/forem", :branch => "rails4"
+gem 'paranoia', '~> 2.1', '>= 2.1.4'
+gem 'github-markdown', '~> 0.6.9'
+gem 'html-pipeline', '~> 2.2', '>= 2.2.2'
+gem 'gemoji', '~> 2.1'
+gem 'sanitize', '~> 4.0'
+gem 'friendly_id', '~> 5.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

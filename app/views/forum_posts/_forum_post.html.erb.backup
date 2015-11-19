@@ -1,0 +1,7 @@
+<%= div_for forum_post do %>
+<div class="pull-avatar-left" style="padding-right: 20px; padding-bottom: 10px;"><%= image_tag current_user.gravatar_url(:size => 65), :class => "img-circle avatar" %></div>
+<div class="forum-post-container" style="margin-top: 20px; margin-left: 20px; padding-bottom: 10px;">
+<p class="text-muted">Posted by <%= forum_post.user.username %> <%= local_time_ago forum_post.created_at %></p>
+  <p><%= forum_post.body %></p>
+</div>
+<% end %>

@@ -39,6 +39,7 @@ gem 'html-pipeline', '~> 2.2', '>= 2.2.2'
 gem 'gemoji', '~> 2.1'
 gem 'sanitize', '~> 4.0'
 gem 'friendly_id', '~> 5.1'
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

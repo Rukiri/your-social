@@ -5,6 +5,7 @@ class ForumThreadsController < ApplicationController
   def index
     @q = ForumThread.search(params[:q])
     @forum_threads = @q.result(distinct: true)
+    @forum_threads = ForumThread.paginate(:page => params[:page], :per_page => 2)
   end
 
   def show

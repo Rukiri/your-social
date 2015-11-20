@@ -2,12 +2,14 @@
   <div class="pull-avatar-right"><%= image_tag @forum_thread.user.gravatar_url, :class => "img-circle avatar" %></div>
   <h1><%= @forum_thread.subject %></h1>
   <div class="top-started"><p class="text-muted" style="margin-left: 62px;">Started by <%= @forum_thread.user.username %> <%= time_tag(@forum_thread.created_at) %> 
-  <% if current_user.admin %>
-    <%= link_to edit_forum_thread_path(@forum_thread), class: "btn btn-info btn-xs" do  %>
-    <span class="glyphicon glyphicon-pencil"></span>
-    <% end %>
-    <%= link_to forum_thread_path(@forum_thread), method: :delete, data: { confirm: "Are you sure you want to do this?" }, class: "btn btn-danger btn-xs" do %>
-      <span class="glyphicon glyphicon-remove"></span>
+  <% if user_signed_in? %>
+    <% if current_user.admin %>
+      <%= link_to edit_forum_thread_path(@forum_thread), class: "btn btn-info btn-xs" do  %>
+      <span class="glyphicon glyphicon-pencil"></span>
+      <% end %>
+      <%= link_to forum_thread_path(@forum_thread), method: :delete, data: { confirm: "Are you sure you want to do this?" }, class: "btn btn-danger btn-xs" do %>
+        <span class="glyphicon glyphicon-remove"></span>
+      <% end %>
     <% end %>
   <% end %>
   </p></div>

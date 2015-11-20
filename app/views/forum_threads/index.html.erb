@@ -9,12 +9,5 @@
   </div>
   <h1 class="page-header">Forum Threads <div class="pull-right"><h3>Posts</h3></div></h1> 
   <%= render @forum_threads %>
-  <center><%= will_paginate @forum_threads, renderer: BootstrapPagination::Rails %></center>
-  <style>
-    .pagination li.active a {
-      background: #d9534f;
-      color: #fff;
-    }
-  </style>
 </div>
 
